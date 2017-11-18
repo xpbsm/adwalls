@@ -1,0 +1,124 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:3470), pid=8232, tid=11168
+#  Error: ShouldNotReachHere()
+#
+# JRE version: 7.0_01-b08
+# Java VM: Java HotSpot(TM) Client VM (21.1-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x02709c00):  JavaThread "Unknown thread" [_thread_in_vm, id=11168, stack(0x00f80000,0x00fd0000)]
+
+Stack: [0x00f80000,0x00fd0000],  sp=0x00fcf520,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1630e1]
+V  [jvm.dll+0x15dcfb]
+V  [jvm.dll+0x18e37]
+V  [jvm.dll+0x1a6a8]
+V  [jvm.dll+0x2a42f]
+V  [jvm.dll+0x2b818]
+V  [jvm.dll+0x2bedb]
+V  [jvm.dll+0x2bf2a]
+V  [jvm.dll+0x2c07d]
+V  [jvm.dll+0x2c15a]
+V  [jvm.dll+0x2c3d7]
+V  [jvm.dll+0x73cb1]
+V  [jvm.dll+0x7406b]
+V  [jvm.dll+0x121a7c]
+V  [jvm.dll+0x14382a]
+V  [jvm.dll+0xa2940]
+C  [javaw.exe+0x1359]
+C  [javaw.exe+0x1dc9]
+C  [javaw.exe+0xa0cb]
+C  [javaw.exe+0xa155]
+C  [kernel32.dll+0x1336a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x39902]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x398d5]  RtlInitializeExceptionChain+0x36
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x02709c00 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=11168, stack(0x00f80000,0x00fd0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x010f0000 - 0x0111f000 	C:\Program Files (x86)\Java\jre7\bin\javaw.exe
+0x77350000 - 0x774d0000 	C:\Windows\SysWOW64\ntdll.dll
+0x75960000 - 0x75a70000 	C:\Windows\syswow64\kernel32.dll
+0x76770000 - 0x767b7000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75800000 - 0x758a1000 	C:\Windows\syswow64\ADVAPI32.dll
+0x75730000 - 0x757dc000 	C:\Windows\syswow64\msvcrt.dll
+0x76a70000 - 0x76a89000 	C:\Windows\SysWOW64\sechost.dll
+0x75cf0000 - 0x75de0000 	C:\Windows\syswow64\RPCRT4.dll
+0x748c0000 - 0x74920000 	C:\Windows\syswow64\SspiCli.dll
+0x748b0000 - 0x748bc000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x76410000 - 0x76510000 	C:\Windows\syswow64\USER32.dll
+0x765c0000 - 0x76650000 	C:\Windows\syswow64\GDI32.dll
+0x757f0000 - 0x757fa000 	C:\Windows\syswow64\LPK.dll
+0x76520000 - 0x765bd000 	C:\Windows\syswow64\USP10.dll
+0x71ac0000 - 0x71c5e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x769b0000 - 0x76a07000 	C:\Windows\syswow64\SHLWAPI.dll
+0x76230000 - 0x76290000 	C:\Windows\system32\IMM32.DLL
+0x76160000 - 0x7622c000 	C:\Windows\syswow64\MSCTF.dll
+0x717d0000 - 0x71805000 	C:\Windows\SysWOW64\nvinit.dll
+0x0f000000 - 0x0f006000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\_etoured.dll
+0x70540000 - 0x7058c000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvd3d9wrap.dll
+0x75e00000 - 0x75f9d000 	C:\Windows\syswow64\SETUPAPI.dll
+0x75930000 - 0x75957000 	C:\Windows\syswow64\CFGMGR32.dll
+0x76d70000 - 0x76e01000 	C:\Windows\syswow64\OLEAUT32.dll
+0x76810000 - 0x7696d000 	C:\Windows\syswow64\ole32.dll
+0x75a70000 - 0x75a82000 	C:\Windows\syswow64\DEVOBJ.dll
+0x70500000 - 0x70533000 	C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvdxgiwrap.dll
+0x5f920000 - 0x5f9de000 	C:\Program Files (x86)\Java\jre7\bin\msvcr100.dll
+0x5bd40000 - 0x5c061000 	C:\Program Files (x86)\Java\jre7\bin\client\jvm.dll
+0x74600000 - 0x74607000 	C:\Windows\system32\WSOCK32.dll
+0x76970000 - 0x769a5000 	C:\Windows\syswow64\WS2_32.dll
+0x75a90000 - 0x75a96000 	C:\Windows\syswow64\NSI.dll
+0x74930000 - 0x74962000 	C:\Windows\syswow64\WINMM.dll
+0x76400000 - 0x76405000 	C:\Windows\syswow64\PSAPI.DLL
+0x6be10000 - 0x6be1c000 	C:\Program Files (x86)\Java\jre7\bin\verify.dll
+0x698f0000 - 0x69910000 	C:\Program Files (x86)\Java\jre7\bin\java.dll
+0x6b660000 - 0x6b673000 	C:\Program Files (x86)\Java\jre7\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:F:\BaiduYunDownload\adt-bundle-windows-x86-20131030\sdk\platforms\android-19\android.jar 
+java_command: test.timetest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.7.0_01
+CLASSPATH=.;C:\Program Files (x86)\Java\jdk1.7.0_01/lib/dt.jar;C:\Program Files (x86)\Java\jdk1.7.0_01/lib/tools.jar
+PATH=C:/Program Files (x86)/Java/jre1.8.0_131/bin/client;C:/Program Files (x86)/Java/jre1.8.0_131/bin;C:/Program Files (x86)/Java/jre1.8.0_131/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Java\jdk1.7.0_01/bin;C:\Program Files (x86)\Java\jdk1.7.0_01/jre/bin;f:\Git\cmd;F:\Git\bin;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;;C:\Program Files (x86)\Microsoft VS Code\bin;F:\BaiduYunDownload\adt-bundle-windows-x86-20131030\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 58 Stepping 9, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 4038052k(881444k free), swap 8074244k(3150244k free)
+
+vm_info: Java HotSpot(TM) Client VM (21.1-b02) for windows-x86 JRE (1.7.0_01-b08), built on Oct  3 2011 02:11:36 by "java_re" with unknown MS VC++:1600
+
+time: Wed Jun 07 14:35:32 2017
+elapsed time: 0 seconds
+

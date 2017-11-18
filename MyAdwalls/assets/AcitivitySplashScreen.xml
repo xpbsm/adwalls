@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="library" size="200.000000 200.000000" />
+    <ImageTarget name="nanmen" size="200.000000 200.000000" />
+    <ImageTarget name="qinshi" size="200.000000 200.000000" />
+    <ImageTarget name="liujiao" size="200.000000 133.055557" />
+    <ImageTarget name="tushu" size="100.000000 42.592594" />
+    <ImageTarget name="sunset2" size="160.000000 103.111115" />
+    <ImageTarget name="sunset" size="150.000000 112.500000" />
+    <ImageTarget name="sunshine2" size="200.000000 133.333328" />
+    <ImageTarget name="sunshine1" size="247.000000 158.080002" />
+    <ImageTarget name="zhizihua" size="247.000000 185.714279" />
+  </Tracking>
+</QCARConfig>

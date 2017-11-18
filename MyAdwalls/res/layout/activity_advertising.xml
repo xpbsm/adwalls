@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:background="@drawable/advertising_background"
+	android:orientation="vertical" >
+
+	<LinearLayout android:id="@+id/ading_layout1"
+	              android:layout_marginTop="10dp"
+		          android:layout_width="fill_parent" 
+		          android:layout_height="wrap_content">
+	     <TextView android:id="@+id/ading_textview1" 
+		           android:layout_width="fill_parent"
+			       android:layout_height="wrap_content"
+		           android:gravity="center"
+			       android:text="广告发布"  
+			       android:textSize="30sp" />
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/ading_relogin"
+		          android:layout_height="wrap_content" 
+		          android:layout_width="fill_parent"
+		          android:layout_marginTop="10dp"
+		          android:gravity="center">
+	     
+		<TextView android:id="@+id/ading_tv_title"
+		          android:text="标 题："
+			      android:layout_width="90dp"
+			      android:layout_height="wrap_content" />
+		
+		<EditText android:id="@+id/ading_et_title1"
+		          android:inputType="none"
+		          android:layout_width="150dp"
+		          android:ellipsize = "start"
+		          android:lines="1"
+                  android:singleLine="true"
+			      android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/ading_layout2"
+		          android:layout_height="wrap_content" 
+		          android:layout_width="fill_parent"
+		          android:layout_marginTop="10dp"
+		          android:gravity="center">
+		
+		<TextView android:id="@+id/ading_tv_info"
+		          android:text="简介："
+			      android:layout_width="90dp"
+			      android:layout_height="wrap_content" />
+		<EditText android:id="@+id/ading_et_info1"
+		          android:layout_width="150dp"
+		          android:lines="1"
+                  android:singleLine="true"
+			      android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	
+	
+	<LinearLayout android:id="@+id/ading_layout4"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:orientation="horizontal"
+		           android:layout_marginTop="10dp"
+		          android:gravity="center">
+		
+		<TextView android:id="@+id/ading_tv_url"
+		          android:layout_width="90dp"
+			      android:layout_height="wrap_content" 
+			      android:text="相关url：" />
+		
+		<EditText android:id="@+id/ading_et_url"
+		          android:layout_width="150dp"
+			      android:layout_height="wrap_content"
+			      android:lines="1"
+                  android:singleLine="true"
+                  android:inputType="textUri"
+			       />
+	</LinearLayout>
+	
+	
+	<LinearLayout android:id="@+id/ading_layout5"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:orientation="horizontal"
+		           android:layout_marginTop="10dp"
+		          android:gravity="center">
+		
+		<TextView android:id="@+id/ading_tv_days"
+		          android:layout_width="90dp"
+			      android:layout_height="wrap_content" 
+			      android:text="保留天数：" />
+		
+		<EditText android:id="@+id/ading_et_days"
+		          android:layout_width="150dp"
+			      android:layout_height="wrap_content"
+			      android:lines="1"
+                  android:singleLine="true"
+                  android:inputType="number"
+			       />
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/ading_layout3"
+		          android:layout_width="fill_parent"
+		          android:layout_height="wrap_content"
+		          android:orientation="horizontal" 
+		           android:layout_marginTop="10dp"
+		          android:gravity="center">
+		
+		<TextView android:id="@+id/ading_tv_image"
+		          android:layout_width="80dp"
+			      android:layout_height="wrap_content" 
+			      android:text="图片:" />
+		
+		 <ImageView
+		     android:id="@+id/ading_imageView1"
+		     android:layout_width="match_parent"
+		     android:layout_height="120dp" />
+		
+	<!-- 图片上传image -->
+		
+	</LinearLayout>
+	
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/take"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="拍照" />
+
+            <Button
+                android:id="@+id/selete"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="选择" />
+        </LinearLayout>
+
+       
+        
+    </LinearLayout>
+	
+	<LinearLayout android:id="@+id/layout5"
+		          android:layout_width="fill_parent" 
+		          android:layout_height="wrap_content"
+		          android:orientation="horizontal"
+		          android:layout_marginTop="10dp"
+		          >
+		<Button   android:id="@+id/ading_reset" 
+		          android:layout_width="80dp"
+			      android:layout_height="wrap_content"
+			      android:layout_marginLeft="50dp"
+			      android:background="@drawable/register_button_background"
+			      android:text="重置" />
+		
+		<Button   android:id="@+id/ading_register"
+		          android:layout_width="80dp"
+			      android:layout_height="wrap_content"
+			      android:layout_marginLeft="60dp" 
+			      android:background="@drawable/register_button_background"
+			      android:text="发布" />
+	</LinearLayout>
+</LinearLayout>

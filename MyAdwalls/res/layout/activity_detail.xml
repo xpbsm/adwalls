@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:orientation="vertical" >
+
+       <ImageView 
+                 android:id="@+id/detailImage"
+                 android:layout_width="200dp"
+                 android:layout_height="134dp"
+                 android:layout_marginLeft="58dp"
+                 android:layout_marginTop="10dp"
+                 android:adjustViewBounds="true"
+                 android:background="@drawable/huakuang1"
+                 android:scaleType="centerCrop"
+                 android:contentDescription="@string/descr_image"
+           
+           />
+        
+       <TextView
+           android:id="@+id/de_title"
+           android:layout_width="268dp"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dip"
+           android:text="@string/content_tv"
+           android:textSize="22sp" />
+       
+        <TextView
+            android:id="@+id/de_info"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dip"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="@string/content_tv"
+            android:textSize="18sp" />
+       
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/de_button"
+        android:layout_width="400dp"
+        android:layout_height="288dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/de_wv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_click_background"
+            android:onClick="onWebClick"
+            android:text="网页" />
+
+        <Button
+            android:id="@+id/de_ar"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/button_click_background"
+            android:onClick="onAdvertisingClick"
+            android:text="发布" />
+    </LinearLayout>
+
+</LinearLayout>

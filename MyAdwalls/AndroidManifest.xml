@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.adwalls"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <!--
+         The application requires a camera.
+
+         NOTE: Any application that requests the CAMERA permission but does not
+         declare any camera features with the <uses-feature> element will be
+         assumed to use all camera features (auto-focus and flash). Thus, the
+         application will not be compatible with devices that do not support
+         all camera features. Please use <uses-feature> to declare only the
+         camera features that your application does need. For instance, if you
+         request the CAMERA permission, but you do not need auto-focus or
+         flash, then declare only the android.hardware.camera feature. The
+         other camera features that you do not request will no longer be
+         assumed as required.
+    -->
+    
+    <uses-feature android:name="android.hardware.camera" />
+    
+    <!--
+        Add this permission to get access to the camera.
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!--
+        Add this permission to allow opening network sockets.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--
+        Add this permission to check which network access properties (e.g.
+        active type: 3G/WiFi).
+     -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+    <!--
+      NOTE: The setting 'android:launchMode="singleTask"' makes sure
+      that the activity can begin only one task and the device can hold only
+      one instance of the activity at a time. However, it allows other
+      activities to be part of its task (unlike the 'singleInstance' mode).
+      It's at the root of the activity stack, but other activities (necessarily
+      "standard" and "singleTop" activities) can be launched into the same task.
+      If this attribute is not set, the default value 'standard' is used, which
+      would allow the activity to be launched multiple times.
+    -->
+    
+    
+  
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="false"
+            android:resizeable="true"
+            android:smallScreens="true" />
+
+    <application
+        android:name="com.xpt.activity.adwalls.Myapplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_geo"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme"
+         >
+        
+        <service android:name="com.baidu.location.f"
+                 android:enabled="true" 
+                 android:process=":remote">
+        </service>
+        
+        <meta-data  
+        android:name="com.baidu.lbsapi.API_KEY"  
+        android:value="Ikd3PVCc6r6G8wG3Htr8A2A3E5SFs0cW" />  
+        <activity
+               android:name="com.xpt.activity.startloading.LoadingActivity"
+               android:label="@string/app_name"
+             > 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+          <activity   
+              android:name="com.xpt.activity.login.MainActivity"
+     
+                          />
+    
+         <activity android:name="com.xpt.activity.register.MainActivity" ></activity>
+        <activity  android:name="com.xpt.activity.navigation.MainActivity"></activity>
+        <activity  android:name="com.xpt.activity.about.MainActivity"></activity>
+         <activity android:name="com.xpt.activity.repwd.MainActivity"></activity>
+        
+      
+         <activity   android:name="com.xpt.activity.adwalls.OverlayActivity" />
+         
+         <activity
+            android:name="com.xpt.vuforia.VuforiaSamples.ui.ActivityList.ActivitySplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+           />
+        <activity
+            android:name="com.xpt.vuforia.VuforiaSamples.ui.ActivityList.ActivityLauncher"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            >
+        </activity>
+        
+         <activity
+            android:name="com.xpt.vuforia.VuforiaSamples.ui.ActivityList.AboutScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:screenOrientation="portrait"
+            android:noHistory="true"
+            >
+        </activity>
+         
+        <activity
+            android:name="com.xpt.vuforia.app.ImageTargets.ImageTargets"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+        	android:theme="@style/SampleAppsTheme"
+ 	        android:launchMode="singleTask"
+            >
+        </activity>
+          <activity  android:name="com.xpt.activity.adwalls.AdvertisingActivity"  />
+          <activity android:name="com.xpt.activity.adwalls.ListViewActivity"></activity>
+          <activity android:name="com.xpt.activity.adwalls.DetailsActivity"></activity>
+          <activity android:name="com.xpt.activity.adwalls.WebDisplayActivity"></activity>
+         
+    </application>
+
+</manifest>

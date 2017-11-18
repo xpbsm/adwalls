@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@drawable/background_navigation"
+    android:orientation="vertical" >
+    
+ <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:textColor="#ffffff44"
+            android:text="@string/adnavigation" />
+	
+ 
+		<Button   android:id="@+id/Advertsing" 
+		          android:layout_width="200dp"
+			      android:layout_height="wrap_content"
+			      android:layout_marginLeft="30dp"
+			      android:layout_marginTop="230dp"
+			      android:background="@drawable/navigation_button_background1" 
+			      android:textColor="#ff00ff"
+			       android:onClick="onMapClick"
+			      android:text="@string/Advertsing" />
+		
+
+		
+		<Button   android:id="@+id/about"
+		          android:layout_width="200dp"
+			      android:layout_height="wrap_content"
+			      android:layout_marginLeft="85dp" 
+			      android:layout_marginTop="50dp"
+			      android:onClick="onAboutClick"
+			      android:textColor="#ffffff44"
+			      android:background="@drawable/navigation_button_background3" 
+			      android:text="@string/about" />
+
+</LinearLayout>

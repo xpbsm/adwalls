@@ -1,0 +1,36 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item 
+              android:state_pressed="false">
+	<shape>
+	        <solid android:color="#7711FFFF" />
+		    <!--
+		  设置圆角
+		  注意：	bottomRightRadius是左下角而不是右下角  bottomLeftRadius右下角
+		    -->
+			  <corners
+			        android:bottomLeftRadius="20dp"
+			        android:bottomRightRadius="20dp"
+			        android:topLeftRadius="20dp"
+			        android:topRightRadius="20dp" />
+		
+	</shape>
+ </item>       
+            
+ <item 
+           android:state_pressed="true">
+     <shape>
+	
+	         <solid android:color="#1111FFFF" />
+		    <!--
+		  设置圆角
+		  注意：	bottomRightRadius是左下角而不是右下角  bottomLeftRadius右下角
+		    -->
+			  <corners
+			        android:bottomLeftRadius="20dp"
+			        android:bottomRightRadius="20dp"
+			        android:topLeftRadius="20dp"
+			        android:topRightRadius="20dp" />	
+	 </shape>
+            
+   </item>
+ </selector>
